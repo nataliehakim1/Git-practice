@@ -1,0 +1,50 @@
+---
+title: Three sets of random numbers
+author: You
+output: html_document
+---
+
+```{r, here-i-am, include = FALSE}
+here::i_am(
+  "report.Rmd"
+)
+```
+
+```{r, load-random-numbers, include = FALSE}
+#! TO DO: 
+#!   read random_numbers1 from output directory
+random_numbers1 <- readRDS(
+  here::here("output/random_numbers1.rds")
+)
+#! TO DO: 
+#!   read random_numbers2 from output directory
+random_numbers2 <- readRDS(
+  here::here("output/random_numbers2.rds")
+)
+#! TO DO: 
+#!   read random_numbers3 from output directory
+random_numbers3 <- readRDS(
+  here::here("output/random_numbers3.rds")
+)
+```
+
+# Random numbers 1
+
+```{r, random-numbers1-histogram}
+#| fig.cap = "First set of random numbers"
+hist(random_numbers1)
+```
+
+# Random numbers 2
+
+```{r, random-numbers2-histogram}
+#| fig.cap = "Second set of random numbers"
+hist(random_numbers2)
+```
+
+# Random numbers 3
+
+```{r, random-numbers3-histogram}
+#| fig.cap = "Third set of random numbers"
+hist(random_numbers3)
+```
