@@ -1,2 +1,3 @@
 **/output/*.Rds
 *.html
+.DS_Store
